@@ -114,6 +114,7 @@ public interface FtpFile {
     /**
      * Set the last modified time stamp of a file
      * @param time The last modified time, in milliseconds since the epoch. See {@link File#setLastModified(long)}.
+     * @return success
      */
     boolean setLastModified(long time);
     
@@ -156,7 +157,7 @@ public interface FtpFile {
      *      If the file is not random accessible,
      *      any offset other than zero will throw an exception.
      * @return An {@link OutputStream} used to write to the {@link FtpFile}
-     * @throws IOException 
+     * @throws IOException when the io stream can't be created
      */
     OutputStream createOutputStream(long offset) throws IOException;
 
@@ -166,7 +167,7 @@ public interface FtpFile {
      *          If the file is not random accessible,
      *          any offset other than zero will throw an exception.
      * @return An {@link InputStream} used to read the {@link FtpFile}
-     * @throws IOException 
+     * @throws IOException when the io stream can't be created
      */
     InputStream createInputStream(long offset) throws IOException;
 }

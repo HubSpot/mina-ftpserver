@@ -54,7 +54,7 @@ public interface Ftplet {
      * exactly once after instantiating the ftplet. The init method must
      * complete successfully before the ftplet can receive any requests.
      * @param ftpletContext The current {@link FtpletContext}
-     * @throws FtpException 
+     * @throws FtpException on error
      */
     void init(FtpletContext ftpletContext) throws FtpException;
 
@@ -90,8 +90,8 @@ public interface Ftplet {
      * @param request
      *            The current request
      * @return The desired action to be performed by the server
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     FtpletResult beforeCommand(FtpSession session, FtpRequest request)
             throws FtpException, IOException;
@@ -119,8 +119,8 @@ public interface Ftplet {
 	 *            use this to check the reply code and thus determine if the
 	 *            command was successfully processed or not.
 	 * @return The desired action to be performed by the server
-	 * @throws FtpException
-	 * @throws IOException
+	 * @throws FtpException on ftp error
+	 * @throws IOException on io error
 	 */
     FtpletResult afterCommand(FtpSession session, FtpRequest request, FtpReply reply)
             throws FtpException, IOException;
@@ -129,8 +129,8 @@ public interface Ftplet {
      * Client connect notification method.
      * @param session The current {@link FtpSession}
      * @return The desired action to be performed by the server
-     * @throws FtpException 
-     * @throws IOException 
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     FtpletResult onConnect(FtpSession session) throws FtpException, IOException;
 
@@ -138,8 +138,8 @@ public interface Ftplet {
      * Client disconnect notification method. This is the last callback method.
      * @param session The current {@link FtpSession}
      * @return The desired action to be performed by the server
-     * @throws FtpException 
-     * @throws IOException 
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     FtpletResult onDisconnect(FtpSession session) throws FtpException,
             IOException;

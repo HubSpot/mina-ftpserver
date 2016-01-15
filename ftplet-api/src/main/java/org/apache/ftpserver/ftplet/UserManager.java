@@ -69,7 +69,7 @@ public interface UserManager {
      * Check if the user exists.
      * @param username the name of the user to check.
      * @return true if the user exist, false otherwise.
-     * @throws FtpException 
+     * @throws FtpException on error
      */
     boolean doesExist(String username) throws FtpException;
 
@@ -77,8 +77,7 @@ public interface UserManager {
      * Authenticate user
      * @param authentication The {@link Authentication} that proves the users identity
      * @return the authenticated account.
-     * @throws AuthenticationFailedException 
-     * @throws FtpException when the UserManager can't fulfill the request.
+     * @throws AuthenticationFailedException when login fails
      */
     User authenticate(Authentication authentication)
             throws AuthenticationFailedException;

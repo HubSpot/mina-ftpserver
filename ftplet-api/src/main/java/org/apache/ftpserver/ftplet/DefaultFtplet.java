@@ -110,8 +110,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onLogin(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -123,8 +123,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onDeleteStart(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -136,8 +136,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onDeleteEnd(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -149,8 +149,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onUploadStart(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -162,8 +162,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onUploadEnd(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -175,8 +175,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onDownloadStart(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -188,8 +188,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onDownloadEnd(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -201,8 +201,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onRmdirStart(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -214,8 +214,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onRmdirEnd(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -227,8 +227,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onMkdirStart(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -240,8 +240,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onMkdirEnd(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -253,8 +253,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onAppendStart(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -266,8 +266,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onAppendEnd(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -279,8 +279,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onUploadUniqueStart(FtpSession session,
             FtpRequest request) throws FtpException, IOException {
@@ -292,8 +292,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onUploadUniqueEnd(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -305,8 +305,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onRenameStart(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -318,8 +318,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onRenameEnd(FtpSession session, FtpRequest request)
             throws FtpException, IOException {
@@ -331,8 +331,8 @@ public class DefaultFtplet implements Ftplet {
      * @param session The current {@link FtpSession}
      * @param request The current {@link FtpRequest}
      * @return The action for the container to take
-     * @throws FtpException
-     * @throws IOException
+     * @throws FtpException on ftp error
+     * @throws IOException on io error
      */
     public FtpletResult onSite(FtpSession session, FtpRequest request)
             throws FtpException, IOException {

@@ -36,7 +36,7 @@ public interface DataConnection {
      *            The {@link OutputStream} containing the destination of the
      *            data from the client.
      * @return The length of the transferred data
-     * @throws IOException
+     * @throws IOException on error
      */
     long transferFromClient(FtpSession session, OutputStream out)
             throws IOException;
@@ -47,7 +47,7 @@ public interface DataConnection {
      * @param in
      *            Data to be transfered to the client
      * @return The length of the transferred data
-     * @throws IOException
+     * @throws IOException on error
      */
     long transferToClient(FtpSession session, InputStream in)
             throws IOException;
@@ -57,7 +57,7 @@ public interface DataConnection {
      * @param session The current {@link FtpSession}
      * @param str
      *            The string to transfer
-     * @throws IOException
+     * @throws IOException on error
      */
     void transferToClient(FtpSession session, String str) throws IOException;
 

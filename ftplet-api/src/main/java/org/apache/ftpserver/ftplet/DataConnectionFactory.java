@@ -29,7 +29,7 @@ public interface DataConnectionFactory {
      * Open an active data connection
      * 
      * @return The open data connection
-     * @throws Exception
+     * @throws Exception on error
      */
     DataConnection openConnection() throws Exception;
 
