@@ -1,2 +1,2 @@
 env:
-  MAVEN_ARGS: -Dgpg.skip=true
+  MAVEN_ARGS: -Dgpg.skip=true -DskipTests
