@@ -102,7 +102,7 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>${project.groupId}</groupId>
+			<groupId>com.fatboyindustrial.ftpserver</groupId>
 			<artifactId>ftplet-api</artifactId>
 		</dependency>
 		<dependency>
