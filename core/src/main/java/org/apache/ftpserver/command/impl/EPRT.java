@@ -41,7 +41,7 @@ import org.slf4j.LoggerFactory;
  * data connection. The extended address MUST consist of the network protocol as
  * well as the network and transport addresses. The format of EPRT is:
  * 
- * EPRT<space><d><net-prt><d><net-addr><d><tcp-port><d>
+ * EPRT net-prt net-addr tcp-port
  *
  * @author <a href="http://mina.apache.org">Apache MINA Project</a> 
  */

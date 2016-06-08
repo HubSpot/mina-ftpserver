@@ -45,8 +45,8 @@ import org.slf4j.LoggerFactory;
  * 
  * <strong><strong>Internal class, do not use directly.</strong></strong>
  * 
- * Custom Language Specific Messages -> Default Language Specific Messages ->
- * Custom Common Messages -> Default Common Messages -> null (not found)
+ * Custom Language Specific Messages -&gt; Default Language Specific Messages -&gt;
+ * Custom Common Messages -&gt; Default Common Messages -&gt; null (not found)
  *
  * @author <a href="http://mina.apache.org">Apache MINA Project</a>
  */

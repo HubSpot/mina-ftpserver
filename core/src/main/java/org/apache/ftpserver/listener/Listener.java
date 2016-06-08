@@ -43,9 +43,6 @@ public interface Listener {
      * method should not return until the listener has started accepting socket
      * requests.
      * @param serverContext The current {@link FtpServerContext}
-     * 
-     * @throws Exception
-     *             On error during start up
      */
     void start(FtpServerContext serverContext);
 

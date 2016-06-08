@@ -33,7 +33,7 @@ import org.slf4j.LoggerFactory;
 /**
  * <strong>Internal class, do not use directly.</strong>
  * 
- * <code>REST &lt;SP&gt; <marker> &lt;CRLF&gt;</code><br>
+ * <code>REST &lt;SP&gt; marker &lt;CRLF&gt;</code><br>
  * 
  * The argument field represents the server marker at which file transfer is to
  * be restarted. This command does not cause file transfer but skips over the

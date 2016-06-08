@@ -47,7 +47,7 @@ import org.slf4j.LoggerFactory;
  * <strong>Internal class, do not use directly.</strong>
  *
  * This is another database based user manager class. It has been tested in
- * MySQL and Oracle 8i database. The schema file is </code>res/ftp-db.sql</code>
+ * MySQL and Oracle 8i database. The schema file is <code>res/ftp-db.sql</code>
  *
  * All the user attributes are replaced during run-time. So we can use your
  * database schema. Then you need to modify the SQLs in the configuration file.

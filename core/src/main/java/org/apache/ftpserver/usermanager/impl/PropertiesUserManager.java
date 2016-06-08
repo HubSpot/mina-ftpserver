@@ -52,8 +52,8 @@ import org.slf4j.LoggerFactory;
  * <p>Properties file based <code>UserManager</code> implementation. We use
  * <code>user.properties</code> file to store user data.</p>
  *
- * </p>The file will use the following properties for storing users:</p>
- * <table>
+ * <p>The file will use the following properties for storing users:</p>
+ * <table summary="">
  * <tr>
  *      <th>Property</th>
  *      <th>Documentation</th>

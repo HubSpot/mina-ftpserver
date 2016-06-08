@@ -36,7 +36,7 @@ import org.slf4j.LoggerFactory;
 /**
  * <strong>Internal class, do not use directly.</strong>
  * 
- * <code>OPTS&lt;SP&gt; <command> &lt;SP&gt; <option> &lt;CRLF&gt;</code><br>
+ * <code>OPTS&lt;SP&gt; &lt;command&gt; &lt;SP&gt; &lt;option&gt; CRLF</code><br>
  * 
  * This command shall cause the server use optional features for the command
  * specified.

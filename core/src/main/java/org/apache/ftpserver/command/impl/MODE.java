@@ -31,7 +31,7 @@ import org.apache.ftpserver.impl.LocalizedFtpReply;
 /**
  * <strong>Internal class, do not use directly.</strong>
  * 
- * <code>MODE &lt;SP&gt; <mode-code> &lt;CRLF&gt;</code><br>
+ * <code>MODE &lt;SP&gt; &lt;CRLF&gt;</code><br>
  * 
  * The argument is a single Telnet character code specifying the data transfer
  * modes described in the Section on Transmission Modes.

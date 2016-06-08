@@ -47,10 +47,6 @@ public final class ExtendedAliasKeyManager extends X509ExtendedKeyManager {
      * 
      * @param mgr
      *            The X509KeyManager used as a delegate
-     * @param keyStore
-     * @param serverKeyAlias
-     *            The alias name of the server's keypair and supporting
-     *            certificate chain
      * @param keyAlias
      */
     public ExtendedAliasKeyManager(KeyManager mgr, String keyAlias) {
@@ -188,10 +184,6 @@ public final class ExtendedAliasKeyManager extends X509ExtendedKeyManager {
      * @param issuers
      *            The list of acceptable CA issuer subject names, or null if it
      *            does not matter which issuers are used (ignored)
-     * @param socket
-     *            The socket to be used for this connection. This parameter can
-     *            be null, in which case this method will return the most
-     *            generic alias to use (ignored)
      * @return The alias name for the desired key, or null if there are no
      *         matches
      */
@@ -209,11 +201,6 @@ public final class ExtendedAliasKeyManager extends X509ExtendedKeyManager {
      * @param issuers
      *            The list of acceptable CA issuer subject names, or null if it
      *            does not matter which issuers are used (ignored)
-     * @param socket
-     *            The socket to be used for this connection. This parameter can
-     *            be null, in which case this method will return the most
-     *            generic alias to use (ignored)
-     * 
      * @return Alias name for the desired key
      */
     public String chooseEngineServerAlias(String keyType, Principal[] issuers,

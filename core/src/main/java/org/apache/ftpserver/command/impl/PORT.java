@@ -40,7 +40,7 @@ import org.slf4j.LoggerFactory;
 /**
  * <strong>Internal class, do not use directly.</strong>
  * 
- * <code>PORT &lt;SP&gt; <host-port> &lt;CRLF&gt;</code><br>
+ * <code>PORT &lt;SP&gt; &lt;host-port&gt; &lt;CRLF&gt;</code><br>
  * 
  * The argument is a HOST-PORT specification for the data port to be used in
  * data connection. There are defaults for both the user and server data ports,
